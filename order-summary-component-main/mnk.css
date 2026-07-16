@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Red Hat Display;
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Red Hat Display;
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Red Hat Display;
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+      --Blue-50:hsl(225, 100%, 98%);
+      --Gray-600: hsl(224, 23%, 55%);
+      --Blue-950: hsl(223, 47%, 23%);
+       --Blue-100: hsl(225, 100%, 94%);
+       --Blue-700: hsl(245, 75%, 52%);
+}
+.container{
+    margin:0;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-size:contain ;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--Blue-50);
+    padding: 1rem;
+     
+
+}
+.music{
+    height: 40rem;
+    border-radius: 0.7rem;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    background-color: white;
+    padding-top: 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+/*
+*/
+.image{
+    align-self: stretch;
+    flex-grow: 0.5;
+}
+img{
+     display:block;
+    max-width: 100%;
+    width:100%;
+    border-top-left-radius:0.7rem;
+    border-top-right-radius:0.7rem ;
+   
+}
+.intro p:first-child{
+    font-family: Red Hat Display,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 30rem;
+    margin-right:0.5rem;
+     margin-left:0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-left:0.5rem;
+padding-right:0.5rem;
+margin-top: 0;
+
+}
+.intro p:last-child{
+    font-family: Red Hat Display,sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color:var(--Gray-600);
+    max-width: 18rem;
+padding-inline: 0.5rem;
+   text-align: center;
+   margin:0 auto;
+  
+}
+.part2 a{
+   display: block; 
+   margin-right: 0.25rem;
+   font-family: inter,sans-serif;
+   font-weight: 400;
+   font-size: 1rem;
+   color: var(--Blue-700);
+}
+.intro{
+   width:21rem;
+    flex-grow:0.5;
+}
+.hard{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Blue-50);
+    width:19rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    flex-grow: 1;
+}
+.part1 img{
+    display:block;
+    width:2.25rem;
+  margin-inline: 0.7rem;
+  
+    
+}
+.part2{
+   height: fit-content;
+   width: fit-content;
+
+   
+}.part1{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+
+  
+} ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-family: red hat display,sanserif;
+}
+.pay{
+    background-color: var(--Blue-700);
+width:19rem;
+padding:0;
+padding-inline: 1rem;
+text-align: center;
+font-family: Red Hat Display,sans-serif;
+font-size: 1rem;
+font-weight: 700;
+color: var(--Blue-50);
+border-radius: 0.5rem;
+border:navy;
+box-shadow: -0.5rem 0.5rem 0.4rem 0.1rem var(--Blue-100);
+flex-grow: 1;
+
+}
+.cancel{
+    color: var(--Gray-600);
+    border: none;
+    background-color: white;
+    flex-grow:0.7;
+    margin-bottom: 1rem;
+}
+.i1{
+font-family: red hat display,sans-serif;
+font-size: medium;
+font-weight: 700;
+}
+.i2{
+    font-family: red hat display,sans-serif;
+    font-size:medium;
+    font-weight: 500;
+    color: var(--Gray-600);
+}
+        
+        
+        @media (min-width:768px){
+          .container{
+            background-image:url("images/pattern-background-desktop.svg");
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: contain;
+           
+          } 
+          .intro p:last-child{
+            font-size: 0.9rem;
+            max-width: 17rem;
+          } 
+          .hard{
+            width:20rem;
+          }
+        }
+   
